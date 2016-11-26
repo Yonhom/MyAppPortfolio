@@ -1,83 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_width="match_parent"
     tools:context="com.example.xuyonghong.myappportfolio.MainActivity">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:text="@string/nanodegree_apps" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
 
-    <Button
-        android:text="@string/hot_movies"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:textSize="20sp"
-        android:textColor="@android:color/white"
-        android:id="@+id/btn_hot_movies"
-        android:background="@color/btnColor" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/nanodegree_apps" />
 
-    <Button
-        android:text="@string/stocks"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/btn_hot_movies"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:textSize="20sp"
-        android:background="@color/btnColor"
-        android:textColor="@android:color/white"
-        android:id="@+id/btn_stocks" />
-    <Button
-        android:text="@string/readers"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/btn_stocks"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:layout_marginTop="16dp"
-        android:textColor="@android:color/white"
-        android:background="@color/btnColor"
-        android:id="@+id/btn_reader" />
-    <Button
-        android:text="@string/news"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/btn_reader"
-        android:textSize="20sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:textColor="@android:color/white"
-        android:background="@color/btnColor"
-        android:id="@+id/btn_news" />
+        <Button
+            android:text="@string/hot_movies"
+            style="@style/BtnStyle"
+            android:layout_below="@+id/title"
+            android:id="@+id/btn_hot_movies" />
 
-    <Button
-        android:text="@string/graduate_design"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/btn_news"
-        android:textSize="20sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:textColor="@android:color/white"
-        android:background="@color/btnColor"
-        android:id="@+id/btn_graduate_design" />
+        <Button
+            android:text="@string/stocks"
+            android:layout_below="@+id/btn_hot_movies"
+            style="@style/BtnStyle"
+            android:id="@+id/btn_stocks" />
+        <Button
+            android:text="@string/readers"
+            android:layout_below="@+id/btn_stocks"
+            style="@style/BtnStyle"
+            android:id="@+id/btn_reader" />
+        <Button
+            android:text="@string/news"
+            android:layout_below="@+id/btn_reader"
+            style="@style/BtnStyle"
+            android:id="@+id/btn_news" />
 
+        <Button
+            android:text="@string/graduate_design"
+            android:layout_below="@+id/btn_news"
+            style="@style/BtnStyle"
+            android:id="@+id/btn_graduate_design" />
 
+    </RelativeLayout>
 
+</ScrollView>
 
-</RelativeLayout>
